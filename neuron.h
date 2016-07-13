@@ -1,17 +1,18 @@
 #ifndef NEURON_H
 #define NEURON_H
 
-#include <memory>
+#include "statemachine.h"
 
 class State;
 
-class Neuron
+class Neuron: public StateMachine
 {
 public:
     Neuron();
+    void process();
 
 private:
-    std::unique_ptr<State> _state;
+
 };
 
 #endif // NEURON_H

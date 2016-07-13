@@ -18,10 +18,12 @@ linux:QMAKE_CXXFLAGS += -pedantic
 SOURCES += main.cpp\
         mainwindow.cpp \
     neuron.cpp \
-    state.cpp
+    state.cpp \
+    statemachine.cpp
 
 HEADERS  += mainwindow.h \
     neuron.h \
-    state.h
+    state.h \
+    statemachine.h
 
 FORMS    += mainwindow.ui
